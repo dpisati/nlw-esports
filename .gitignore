@@ -1,0 +1,51 @@
+# dependencies
+mobile/node_modules
+server/node_modules
+web/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+mobile/coverage
+web/coverage
+server/coverage
+
+# production
+web/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+mobile/.env*.local
+server/.env*.local
+web/.env*.local
+
+# typescript
+mobile/*.tsbuildinfo
+server/*.tsbuildinfo
+web/*.tsbuildinfo
+
+mobile/node_modules/
+mobile/.expo/
+mobile/dist/
+mobile/npm-debug.*
+mobile/*.jks
+mobile/*.p8
+mobile/*.p12
+mobile/*.key
+mobile/*.mobileprovision
+mobile/*.orig.*
+mobile/web-build/
+
+# macOS
+mobile/.DS_Store
