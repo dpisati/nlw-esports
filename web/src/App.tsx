@@ -7,6 +7,7 @@ import { GameBanner } from './components/GameBanner';
 import { useEffect, useState } from 'react';
 import { CreateAdBanner } from './components/CreateAdBanner';
 import { CreateAdModal } from './components/CreateAdModal';
+import axios from 'axios';
 
 export interface IGameBanner {
     id: string;
@@ -24,9 +25,7 @@ function App() {
         let mounted = true;
         const loadGames = async () => {
             if (mounted) {
-                const games = await fetch(`http://localhost:3333/games`);
-                const data = await games.json();
-
+                const { data } = await axios(`http://localhost:3333/games`);
                 setGames(data);
             }
         };
